@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI/CD Pipeline Test</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 80px;
+            background: #95b0d8;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+        }
+
+        button {
+            background: #0078d4;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background: #005fa3;
+        }
+
+        .timestamp {
+            margin-top: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🚀 CI/CD Pipeline Test</h1>
+
+    <p>If you see this page, deployment is working!</p>
+
+    <button onclick="showMessage()">Click Me</button>
+
+    <div class="timestamp">
+        Deployed at:
+        <span id="time"></span>
+    </div>
+
+    <script>
+        function showMessage() {
+            alert("CI/CD is working 🎉");
+        }
+
+        // Show deployment timestamp
+        document.getElementById("time").innerText =
+            new Date().toLocaleString();
+    </script>
+
+</body>
+</html>
